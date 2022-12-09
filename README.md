@@ -9,3 +9,15 @@ To build this package you can run:
 ```shell
 yarn && yarn build
 ```
+
+IN case you get this issue
+
+```shell
+Error: error:0308010C:digital envelope routines::unsupported
+```
+
+try calling:
+
+```shell
+export NODE_OPTIONS=--openssl-legacy-provider
+```
